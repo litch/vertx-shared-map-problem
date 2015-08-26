@@ -1,9 +1,7 @@
-require 'vertx/vertx'
-vertx = Vertx::Vertx.vertx()
 
 map_name = 'something'
 
-shared_data = vertx.shared_data()
+shared_data = $vertx.shared_data()
 
 map = shared_data.get_local_map(map_name)
 
